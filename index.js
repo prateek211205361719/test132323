@@ -25,7 +25,7 @@ app.use(passport.session());
 
 //setting route for google auth
 authRoute(app);
-billing(app);
+//billing(app);
 
 if(process.env.NODE_ENV === 'PRODUCTION'){
     app.use(express.static('client/build'));
