@@ -8,7 +8,8 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix ./server/client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix ./server/client && npm run build --prefix ./server/client"
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix ./server/client && npm run build --prefix ./server/client",
+    "start":"npm run dev"
   },
   "author": "",
   "license": "ISC",
