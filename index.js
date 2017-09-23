@@ -27,7 +27,7 @@ app.use(passport.session());
 authRoute(app);
 //billing(app);
 
-if(process.env.NODE_ENV === 'PRODUCTION'){
+if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'));
     const path = require('path');
     app.get('*', (req, res) => {
