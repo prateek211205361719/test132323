@@ -1,12 +1,11 @@
 
 
 
-/*const keys = require('../config/key');
+const keys = require('../config/key');
 const stripe = require('stripe')(keys.stripeSecretKey);
 var { isUserLogin }  = require('../middlewares/requirelogin');
 module.exports = (app) => {
-
-    /app.post('/api/stripe', isUserLogin, async (req, res) =>{
+     app.post('/api/stripe', isUserLogin, async (req, res) =>{
         console.log(req.body);
         const charge = await stripe.charges.create({
             amount: 500,
@@ -19,5 +18,4 @@ module.exports = (app) => {
         res.send(user);
         console.log(charge);
     });
-}
-*/
+};
